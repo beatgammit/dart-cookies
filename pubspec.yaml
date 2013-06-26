@@ -1,0 +1,8 @@
+name: cookies
+version: 0.0.1
+description: Cookie Parser
+author: T. Jameson Little <beatgammit@gmail.com>
+homepage: https://github.com/beatgammit/dart-cookies
+dependencies:
+dev_dependencies:
+  unittest: any

@@ -1,0 +1,5 @@
+pubspec.lock
+packages
+
+# editor garbage
+*.swp
