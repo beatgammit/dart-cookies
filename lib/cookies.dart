@@ -1,3 +1,5 @@
+library cookies;
+
 class Cookie {
   String key, value, path, domain, maxAge, expires;
   bool secure = false;
