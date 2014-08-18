@@ -66,7 +66,7 @@ class CookieJar implements Map<String, Cookie> {
   CookieJar(String cookies) {
     this.cookies = new Map<String, Cookie>();
 
-    List<String> parts = cookies.split(";").map((s) => s.trim());
+    Iterable<String> parts = cookies.split(";").map((s) => s.trim());
     if (parts.isEmpty)
       return;
 
