@@ -60,7 +60,7 @@ class CookieJar implements Map<String, Cookie> {
   Map<String, Cookie> cookies;
 
   CookieJar.from(Map<String, Cookie> other) {
-    this.cookies = new Map<String, Cookie>(other);
+    this.cookies = new Map<String, Cookie>.from(other);
   }
 
   CookieJar(String cookies) {
@@ -104,13 +104,13 @@ class CookieJar implements Map<String, Cookie> {
     this.cookies[key] = val;
   }
 
-  Cookie operator [](String key) => this.cookies[key];
+  Cookie operator [](Object key) => this.cookies[key];
 
   void addAll(Map<String, Cookie> other) => this.cookies.addAll(other);
   void clear() => this.cookies.clear();
-  bool containsKey(String key) => this.cookies.containsKey(key);
-  bool containsValue(Cookie val) => this.cookies.containsValue(val);
+  bool containsKey(Object key) => this.cookies.containsKey(key);
+  bool containsValue(Object val) => this.cookies.containsValue(val);
   void forEach(void f(String key, Cookie val)) => this.cookies.forEach(f);
   Cookie putIfAbsent(String key, Cookie ifAbsent()) => this.cookies.putIfAbsent(key, ifAbsent);
-  Cookie remove(String key) => this.cookies.remove(key);
+  Cookie remove(Object key) => this.cookies.remove(key);
 }
